@@ -2,7 +2,7 @@ import telebot
 import random
 from config import *
 
-api = token_bot
+api = token
 admin = sudo
 bot = telebot.TeleBot(api, parse_mode="markdown")
 kirim = bot.send_message 
