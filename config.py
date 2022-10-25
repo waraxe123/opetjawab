@@ -1,9 +1,11 @@
-import dotenv
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # VARIABLE
-
-
+token = os.getenv("BOT_TOKEN")
+sudo = os.getenv("SUDO")
 
 
 # JAWABAN BOT
