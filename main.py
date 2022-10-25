@@ -11,7 +11,7 @@ kopi = bot.copy_message
 
 
 
-@bot.message_handler(commands=["help", "xstart", "bcast"])
+@bot.message_handler(commands=["help", "start", "bcast"])
 def perintah(message):
 	id = message.chat.id
 	teks = message.text
