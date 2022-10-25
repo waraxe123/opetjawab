@@ -1,0 +1,17 @@
+{
+    "name": "Tanyakan Bot",
+    "description": "Bot telegram simpel untuk menjawab sebuah pertanyaan.",
+    "keywords": ["python", "telegram"],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Token Bot dari @BotFather.",
+            "value": "12345:abcdefg", 
+            "required": true
+        },
+        "SUDO":{
+            "description": "ID admin untuk bot",
+            "value": "654321", 
+            "required": true
+        }
+    }
+}
