@@ -2,18 +2,12 @@ import telebot
 import random
 from config import *
 
-api = "5714684314:AAFLa85bhpPPR7d6CDQOZps3wPb0eg-RkB0"
-admin = 5795091740
+api = token_bot
+admin = sudo
 bot = telebot.TeleBot(api, parse_mode="markdown")
 kirim = bot.send_message 
 lanjut = bot.register_next_step_handler 
 kopi = bot.copy_message 
-
-kenapa = ["gatau", "ntahlah", "tanya orang lain aja", "yntkts", "karna because tidak pernah never", "bodoamat", "apasiii wibu gaboleh nanya", "karna lu wibu", "karna aku mencintaimu", "karna kamu jelek", "pikir sendiri", "tanya google aja"]
-
-kapan = ["mungkin sekarang", "1 jam lagi", "2 jam lagi", "8 jam lagi", "hari ini", "mungkin besok", "besok lusa", "sebulan lagi", "setahun lagi", "sewindu lagi", "tahun lalu", "tahun 1945 17 agustus", "tahun 2070", "diem deh gausah nanya", "apasi wibu", "pikir sendiri", "seabad lagi", "5000 SM", "minggu ini", "tahun ini"]
-
-apakah = ["betul", "tidak", "iya", "ga", "kepo deh", "diem deh gausah nanya mulu", "bisa jadi si", "kurang tau", "bodo ah", "hmm", "ga mungkin", "kayanya iya", "mungkin aja", "mustahil", "pikir sendiri", "sudah pasti", "yoiii"]
 
 
 
