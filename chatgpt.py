@@ -25,7 +25,7 @@ from . import ultroid_cmd, check_filename, udB, LOGS, fast_download, run_async
 
 
 @run_async
-def get_gpt_answer(gen_image, question, api_key):
+def get_ai_answer(gen_image, question, api_key):
     openai.api_key = api_key
     if gen_image:
         x = openai.Image.create(
@@ -49,7 +49,7 @@ def get_gpt_answer(gen_image, question, api_key):
 
 
 @ultroid_cmd(pattern="ai ?(.*)")
-async def openai_chat_gpt(e):
+async def openai_chat_ai(e):
     api_key = "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"
     gen_image = False
     if not api_key:
