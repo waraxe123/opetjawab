@@ -48,9 +48,9 @@ def get_gpt_answer(gen_image, question, api_key):
     return x["choices"][0].text.strip()
 
 
-@ultroid_cmd(pattern="gpt ?(.*)")
+@ultroid_cmd(pattern="ai ?(.*)")
 async def openai_chat_gpt(e):
-    api_key = udB.get_key("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")
+    api_key = "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"
     gen_image = False
     if not api_key:
         return await e.eor("`OPENAI_API` key missing..")
